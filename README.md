@@ -37,7 +37,7 @@ AkeruNote is a (half broken, probably) Flipnote Hatena server for the Nintendo D
 First, clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/yourusername/akerunote.git
+git clone https://github.com/RekuNote/AkeruNote.git
 cd akerunote
 ```
 

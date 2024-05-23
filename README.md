@@ -3,7 +3,7 @@
     </p>
 </p>
 
-AkeruNote is a Flipnote Hatena server for the Nintendo DSi written for Python 3.12.3. This project allows you to host your own Flipnote Hatena server with enhanced features and customizations.
+AkeruNote is a (half broken, probably) Flipnote Hatena server for the Nintendo DSi written for Python 3.12.3. This project allows you to host your own Flipnote Hatena server with enhanced features and customizations.
 
 ## Table of Contents
 

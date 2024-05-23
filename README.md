@@ -17,7 +17,7 @@ AkeruNote is a (half broken, probably) Flipnote Hatena server for the Nintendo D
 
 - Host your own Flipnote Hatena server
 - Customizable features and settings
-- Support for multiple databases
+- Support for multiple databases (untested)
 
 ## Requirements
 

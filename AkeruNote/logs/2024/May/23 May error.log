@@ -1,0 +1,564 @@
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 102, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5, in <module>
+    from database import Database
+  File "/Users/trippy/Downloads/hatena-server-master py3/database/__init__.py", line 3, in <module>
+    from Hatenatools import TMB
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/__init__.py", line 3, in <module>
+    from .PPM import PPM, TMB
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/PPM.py", line 16, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 102, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5, in <module>
+    from database import Database
+  File "/Users/trippy/Downloads/hatena-server-master py3/database/__init__.py", line 159, in <module>
+    Database = Database()#is loaded, yesth!
+               ^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/database/__init__.py", line 18, in __init__
+    self.Newest = [tuple(i.split("\t")) for i in file.split("\n")]#[i] = [creatorID, filename]
+                                                 ^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 107, in <module>
+    import hatena
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 2, in <module>
+    import sys, os, imp
+ModuleNotFoundError: No module named 'imp'
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 107, in <module>
+    import hatena
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 2, in <module>
+    import sys, os, imp
+ModuleNotFoundError: No module named 'imp'
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 204, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 180, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], UGOXMLResource(os.path.join(path, filename)))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 154, in __init__
+    self.ugofile = self.ugofile.Pack()
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 265, in Pack
+    TableOfContents.append("\t".join(("1", num, labels[0], labels[1], labels[2], labels[3], labels[4])))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 2: expected str instance, bytes found
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 204, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 180, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], UGOXMLResource(os.path.join(path, filename)))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 154, in __init__
+    self.ugofile = self.ugofile.Pack()
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 285, in Pack
+    TableOfContents.append("\t".join(["4", link, trait, label] + list(other)))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 3: expected str instance, bytes found
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 204, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 180, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], UGOXMLResource(os.path.join(path, filename)))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 154, in __init__
+    self.ugofile = self.ugofile.Pack()
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 285, in Pack
+    TableOfContents.append("\t".join(["4", link.decode('utf-8'), trait.decode('utf-8'), label.decode('utf-8')] + [o.decode('utf-8') for o in other]))
+                                           ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 102, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5, in <module>
+    from database import Database
+  File "/Users/trippy/Downloads/hatena-server-master py3/database/__init__.py", line 3, in <module>
+    from Hatenatools import TMB
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/__init__.py", line 4, in <module>
+    from .UGO import UGO
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 286
+    return s.decode('utf-8') if isinstance(s, bytes) else s
+                                                           ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 102, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5, in <module>
+    from database import Database
+  File "/Users/trippy/Downloads/hatena-server-master py3/database/__init__.py", line 3, in <module>
+    from Hatenatools import TMB
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/__init__.py", line 4, in <module>
+    from .UGO import UGO
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 291
+    if file:
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 102, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5, in <module>
+    from database import Database
+  File "/Users/trippy/Downloads/hatena-server-master py3/database/__init__.py", line 3, in <module>
+    from Hatenatools import TMB
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/__init__.py", line 4, in <module>
+    from .UGO import UGO
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 291
+    if file:
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 102, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5, in <module>
+    from database import Database
+  File "/Users/trippy/Downloads/hatena-server-master py3/database/__init__.py", line 3, in <module>
+    from Hatenatools import TMB
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/__init__.py", line 4, in <module>
+    from .UGO import UGO
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 291
+    if file:
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 102, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5, in <module>
+    from database import Database
+  File "/Users/trippy/Downloads/hatena-server-master py3/database/__init__.py", line 3, in <module>
+    from Hatenatools import TMB
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/__init__.py", line 4, in <module>
+    from .UGO import UGO
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 246
+    TableOfContents = []
+                        ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 102, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5, in <module>
+    from database import Database
+  File "/Users/trippy/Downloads/hatena-server-master py3/database/__init__.py", line 3, in <module>
+    from Hatenatools import TMB
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/__init__.py", line 4, in <module>
+    from .UGO import UGO
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 246
+    TableOfContents = []
+                        ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 102, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5, in <module>
+    from database import Database
+  File "/Users/trippy/Downloads/hatena-server-master py3/database/__init__.py", line 3, in <module>
+    from Hatenatools import TMB
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/__init__.py", line 4, in <module>
+    from .UGO import UGO
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 246
+    TableOfContents = []
+                        ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 204, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 180, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], UGOXMLResource(os.path.join(path, filename)))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 154, in __init__
+    self.ugofile = self.ugofile.Pack()
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/Hatenatools/UGO.py", line 40, in Pack
+    if file:
+       ^^^^
+NameError: name 'file' is not defined. Did you mean: 'filter'?
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 204, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 180, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], UGOXMLResource(os.path.join(path, filename)))
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'index.ugo' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 204, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 195, in LoadHatenadirStructure
+    Resource.putChild(filename, FileResource(os.path.join(path, filename)))
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'eula_list.tsv' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 107, in <module>
+    import hatena
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 202
+    for root, dirs, files in os.walk(path):
+TabError: inconsistent use of tabs and spaces in indentation
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 233, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 200, in LoadHatenadirStructure
+    LoadHatenadirStructure(folder, os.path.join(path, foldername))
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 220, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], pyfile.PyResource())
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'flipnote.post' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 262, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 200, in LoadHatenadirStructure
+    LoadHatenadirStructure(folder, os.path.join(path, foldername))
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 249, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], pyfile.PyResource())
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'flipnote.post' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 291, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 200, in LoadHatenadirStructure
+    LoadHatenadirStructure(folder, os.path.join(path, foldername))
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 278, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], pyfile.PyResource())
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'flipnote.post' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 320, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 200, in LoadHatenadirStructure
+    LoadHatenadirStructure(folder, os.path.join(path, foldername))
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 307, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], pyfile.PyResource())
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'flipnote.post' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 351, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 202, in LoadHatenadirStructure
+    LoadHatenadirStructure(folder, os.path.join(path, foldername))
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 338, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], pyfile.PyResource())
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'flipnote.post' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 382, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 202, in LoadHatenadirStructure
+    LoadHatenadirStructure(folder, os.path.join(path, foldername))
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 369, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], pyfile.PyResource())
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'flipnote.post' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 413, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 202, in LoadHatenadirStructure
+    LoadHatenadirStructure(folder, os.path.join(path, foldername))
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 400, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], pyfile.PyResource())
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'flipnote.post' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 444, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 202, in LoadHatenadirStructure
+    LoadHatenadirStructure(folder, os.path.join(path, foldername))
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 431, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], pyfile.PyResource())
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'flipnote.post' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 109, in <module>
+    site = server.Site(hatena.Setup())
+                       ^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 475, in Setup
+    root = Root()
+           ^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 56, in __init__
+    self.dsResource = ds()
+                      ^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 87, in __init__
+    self.region = UgoRoot()
+                  ^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 103, in __init__
+    LoadHatenadirStructure(self)
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 202, in LoadHatenadirStructure
+    LoadHatenadirStructure(folder, os.path.join(path, foldername))
+  File "/Users/trippy/Downloads/hatena-server-master py3/hatena.py", line 462, in LoadHatenadirStructure
+    Resource.putChild(filename[:-3], pyfile.PyResource())
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/web/resource.py", line 236, in putChild
+    raise TypeError(f"Path segment must be bytes, but {path!r} is {type(path)}")
+TypeError: Path segment must be bytes, but 'flipnote.post' is <class 'str'>
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 133, in <module>
+    site.buildProtocol = funcType(buildProtocol, site, server.Site)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: method expected 2 arguments, got 3
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 133, in <module>
+    site.buildProtocol = MethodType(buildProtocol, site)
+                         ^^^^^^^^^^
+NameError: name 'MethodType' is not defined
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/internet/tcp.py", line 1346, in startListening
+    skt.bind(addr)
+OSError: [Errno 48] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/server.py", line 127, in <module>
+    reactor.listenTCP(port, site)  # Hey listen!~
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/internet/posixbase.py", line 364, in listenTCP
+    p.startListening()
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/internet/tcp.py", line 1348, in startListening
+    raise CannotListenError(self.interface, self.port, le)
+twisted.internet.error.CannotListenError: Couldn't listen on any:8080: [Errno 48] Address already in use.
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/start.py", line 84, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5
+    from Akeru/HatenaDB import Akeru/HatenaDB
+              ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/start.py", line 84, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5
+    from Akeru.HatenaDB import Akeru.HatenaDB
+                                    ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/start.py", line 84, in <module>
+    import DB
+  File "/Users/trippy/Downloads/hatena-server-master py3/DB.py", line 5, in <module>
+    from Akeru.HatenaDB import Database
+  File "/Users/trippy/Downloads/hatena-server-master py3/Akeru/HatenaDB/__init__.py", line 3, in <module>
+    from Hatenatools import TMB
+ModuleNotFoundError: No module named 'Hatenatools'
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/internet/tcp.py", line 1346, in startListening
+    skt.bind(addr)
+OSError: [Errno 48] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/start.py", line 128, in <module>
+    reactor.listenTCP(port, site)  # Hey listen!~
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/internet/posixbase.py", line 364, in listenTCP
+    p.startListening()
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/internet/tcp.py", line 1348, in startListening
+    raise CannotListenError(self.interface, self.port, le)
+twisted.internet.error.CannotListenError: Couldn't listen on any:8080: [Errno 48] Address already in use.
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/internet/tcp.py", line 1346, in startListening
+    skt.bind(addr)
+OSError: [Errno 48] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/trippy/Downloads/hatena-server-master py3/start.py", line 128, in <module>
+    reactor.listenTCP(port, site)  # Hey listen!~
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/internet/posixbase.py", line 364, in listenTCP
+    p.startListening()
+  File "/Users/trippy/Downloads/hatena-server-master py3/path/to/venv/lib/python3.12/site-packages/twisted/internet/tcp.py", line 1348, in startListening
+    raise CannotListenError(self.interface, self.port, le)
+twisted.internet.error.CannotListenError: Couldn't listen on any:8081: [Errno 48] Address already in use.
+Traceback (most recent call last):
+  File "/Users/trippy/Desktop/AkeruNote/path/to/venv/lib/python3.12/site-packages/twisted/internet/tcp.py", line 1346, in startListening
+    skt.bind(addr)
+OSError: [Errno 48] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/trippy/Desktop/AkeruNote/start.py", line 139, in <module>
+    reactor.listenTCP(port, site)  # Hey listen!~
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/trippy/Desktop/AkeruNote/path/to/venv/lib/python3.12/site-packages/twisted/internet/posixbase.py", line 364, in listenTCP
+    p.startListening()
+  File "/Users/trippy/Desktop/AkeruNote/path/to/venv/lib/python3.12/site-packages/twisted/internet/tcp.py", line 1348, in startListening
+    raise CannotListenError(self.interface, self.port, le)
+twisted.internet.error.CannotListenError: Couldn't listen on any:8080: [Errno 48] Address already in use.

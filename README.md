@@ -3,7 +3,7 @@
     </p>
 </p>
 
-AkeruNote is a (half broken, probably) Flipnote Hatena server for the Nintendo DSi written for Python 3.12.3. This project allows you to host your own Flipnote Hatena server with enhanced features and customizations.
+AkeruNote is a (broken) Flipnote Hatena server for the Nintendo DSi written for Python 3.12.3. This project allows you to host your own Flipnote Hatena server with enhanced features and customizations.
 
 ## Table of Contents
 
@@ -17,7 +17,6 @@ AkeruNote is a (half broken, probably) Flipnote Hatena server for the Nintendo D
 
 - Host your own Flipnote Hatena server
 - Customizable features and settings
-- Support for multiple databases (untested)
 
 ## Requirements
 
@@ -94,7 +93,7 @@ To start the AkeruNote server, simply run `start.py`:
 
 ```python3 start.py```
 
-This will start the server on the default port (9090). You will most likely need to change this to 8080 for proper use.
+This will start the server on the default port `8080`. You can change this by modifying `start.py`.
 
 ## License
 
